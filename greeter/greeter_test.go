@@ -14,17 +14,6 @@ import (
 	"go-lab/grpc/greeter"
 )
 
-// https://prometheus.io/docs/concepts/metric_types/
-// https://github.com/grpc-ecosystem/go-grpc-prometheus
-// https://dev.to/aleksk1ng/go-grpc-clean-architecture-microservice-with-prometheus-grafana-monitoring-and-jaeger-opentracing-51om
-// https://grpc.io/docs/languages/go/basics/
-// https://github.com/grpc/grpc-go/blob/master/examples/helloworld/greeter_server/main.go
-
-// https://pkg.go.dev/google.golang.org/protobuf
-// https://golang.org/pkg/testing/
-// https://pkg.go.dev/github.com/prometheus/client_golang@v1.10.0/prometheus#hdr-A_Basic_Example
-// https://github.com/prometheus/client_golang/blob/master/prometheus/examples_test.go
-
 func TestGRPC(t *testing.T) {
 	l, err := net.Listen("tcp", "localhost:0")
 	if err != nil {
