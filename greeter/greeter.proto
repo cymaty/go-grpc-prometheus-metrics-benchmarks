@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "go-lab/grpc/greeter";
+
+service Greeter {
+    rpc SayHello(HelloRequest) returns (HelloResponse) {}
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 2;
+}
