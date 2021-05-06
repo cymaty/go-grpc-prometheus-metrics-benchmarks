@@ -11,7 +11,7 @@ import (
 	"github.com/prometheus/common/expfmt"
 	"google.golang.org/grpc"
 
-	"go-lab/grpc/greeter"
+	"github.com/Fellah/go-grpc-prometheus-metrics-benchmarks/greeter"
 )
 
 func TestGRPC(t *testing.T) {
